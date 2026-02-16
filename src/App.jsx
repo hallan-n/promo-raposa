@@ -1,9 +1,9 @@
 import Header from "./components/Headers";
 import Home from "./pages/Home";
 import Groups from "./pages/Groups";
-import Evidence from "./pages/Evidence";
 import Questions from "./pages/Questions";
-import Promotions from "./pages/Promotions";
+import Information from "./pages/Information";
+import Footer from "./components/Footer";
 
 export default function App() {
 
@@ -11,10 +11,10 @@ export default function App() {
     <>
       <Header />
       <Home />
+      <Information/>
       <Groups />
-      <Evidence />
       <Questions />
-      <Promotions />
+      <Footer/>
     </>
   )
 }

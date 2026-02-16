@@ -39,9 +39,7 @@ export default function Header() {
                 <div className="hidden md:flex">
                     <a href="#home" className={linkClass("home")} onClick={() => setActive("home")}>Home</a>
                     <a href="#groups" className={linkClass("groups")} onClick={() => setActive("groups")}>Grupos</a>
-                    <a href="#evidence" className={linkClass("evidence")} onClick={() => setActive("evidence")}>Depoimentos</a>
                     <a href="#questions" className={linkClass("questions")} onClick={() => setActive("questions")}>Dúvidas</a>
-                    <a href="#promotions" className={linkClass("promotions")} onClick={() => setActive("promotions")}>Ofertas</a>
                 </div>
 
                 <div className="relative md:hidden">
@@ -56,9 +54,7 @@ export default function Header() {
                         >
                             <a href="#home" className={linkClass("home")} onClick={() => handleClick("home")}>Home</a>
                             <a href="#groups" className={linkClass("groups")} onClick={() => handleClick("groups")}>Grupos</a>
-                            <a href="#evidence" className={linkClass("evidence")} onClick={() => handleClick("evidence")}>Depoimentos</a>
                             <a href="#questions" className={linkClass("questions")} onClick={() => handleClick("questions")}>Dúvidas</a>
-                            <a href="#promotions" className={linkClass("promotions")} onClick={() => handleClick("promotions")}>Ofertas</a>
                         </div>
                     )}
                 </div>
