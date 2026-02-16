@@ -1,9 +1,34 @@
+import { useEffect, useState } from "react"
 import { CheckCircleIcon, UserGroupIcon } from "@heroicons/react/24/outline"
 import logo_wpp from "../assets/whatsapp.svg"
 
-
-
 export default function Home() {
+    const SPEED = 1200
+    const MIN = 35
+    const MAX = 120
+
+    const [online, setOnline] = useState(55)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setOnline(prev => {
+                const rand = Math.random()
+                let next = prev
+
+                if (rand < 0.7) next = prev + 1
+                else if (rand < 0.9) next = prev - 1
+                else next = prev
+
+                if (next > MAX) next = MAX
+                if (next < MIN) next = MIN
+
+                return next
+            })
+        }, SPEED)
+
+        return () => clearInterval(interval)
+    }, [])
+
     return (
         <div id="home" className="flex justify-center p-6 relative min-h-screen pt-40 overflow-hidden bg-[radial-gradient(circle_at_15%_20%,rgba(139,92,246,0.25),transparent_40%),radial-gradient(circle_at_85%_30%,rgba(37,99,235,0.35),transparent_50%),linear-gradient(135deg,#020617_0%,#0f172a_50%,#020617_100%)]">
             <div className="pointer-events-none absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(139,92,246,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.1)_1px,transparent_1px)] [background-size:50px_50px]" />
@@ -23,14 +48,12 @@ export default function Home() {
                         <p className="font-bold text-white">Entrar no WhatsApp - Grátis</p>
                     </a>
 
-
                     <a href="#groups" className="hover:scale-105 flex items-center gap-4 cursor-pointer mx-auto rounded-full px-10 p-4 bg-gradient-to-r from-[#0084C6] to-[#02547D] shadow-[0_0_8px_rgba(34,158,217,0.35)] hover:shadow-[0_0_12px_rgba(34,158,217,0.45)] transition-all duration-300">
-                        
                         <UserGroupIcon className="w-6 h-6 text-white" />
                         <p className="font-bold text-white">Todos os grupos - Grátis</p>
                     </a>
-
                 </div>
+
                 <div className="flex gap-4 justify-center flex-col md:flex-row">
                     <div className="flex gap-2 items-center">
                         <CheckCircleIcon className="w-6 h-6 text-[#17AC4E]" />
@@ -41,19 +64,20 @@ export default function Home() {
                         <CheckCircleIcon className="w-6 h-6 text-[#17AC4E]" />
                         <p className="text-white">Saia quando quiser</p>
                     </div>
+
                     <div className="flex gap-2 items-center">
                         <CheckCircleIcon className="w-6 h-6 text-[#17AC4E]" />
                         <p className="text-white">Ofertas verificadas</p>
                     </div>
                 </div>
+
                 <div className="mx-auto">
                     <div className="justify-center items-center gap-4 text-[#17AC4E] inline-flex p-4 px-6 rounded-full bg-[#17AC4E]/10 border">
                         <div className="relative">
                             <div className="absolute w-4 h-4 rounded-full bg-[#17AC4E] animate-ping [animation-duration:1.5s]"></div>
                             <div className="absolut w-4 h-4 rounded-full bg-[#17AC4E]"></div>
                         </div>
-                        <p className="text-white"><b className="text-[#17AC4E]">55</b> pessoas online agora</p>
-
+                        <p className="text-white"><b className="text-[#17AC4E]">{online}</b> pessoas online agora</p>
                     </div>
                 </div>
             </div>
