@@ -8,14 +8,21 @@ export default function Header() {
     const [open, setOpen] = useState(false)
     const menuRef = useRef(null)
 
+    const scrollTo = (id) => {
+        document.getElementById(id)?.scrollIntoView({
+            behavior: "smooth"
+        })
+    }
+
     const linkClass = (name) =>
-        `block px-4 py-2 transition-all ${
+        `cursor-pointer block px-4 py-2 transition-all ${
             active === name ? "font-bold text-primary" : "text-white hover:text-primary"
         }`
 
     const handleClick = (name) => {
         setActive(name)
         setOpen(false)
+        scrollTo(name)
     }
 
     useEffect(() => {
@@ -33,13 +40,13 @@ export default function Header() {
         <header className="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
             <div className="container flex items-center justify-between mx-auto p-4">
                 <img className="hidden md:block" src={logo_full} alt="" />
-                <img className="block md:hidden" src={logo_icon} alt="" />
+                <img className="block w-12 md:hidden" src={logo_icon} alt="" />
 
                 <div className="hidden md:flex">
-                    <a href="#home" className={linkClass("home")} onClick={() => setActive("home")}>Home</a>
-                    <a href="#information" className={linkClass("information")} onClick={() => handleClick("information")}>Informações</a>
-                    <a href="#groups" className={linkClass("groups")} onClick={() => setActive("groups")}>Grupos</a>
-                    <a href="#questions" className={linkClass("questions")} onClick={() => setActive("questions")}>Dúvidas</a>
+                    <button className={linkClass("home")} onClick={() => handleClick("home")}>Home</button>
+                    <button className={linkClass("information")} onClick={() => handleClick("information")}>Informações</button>
+                    <button className={linkClass("groups")} onClick={() => handleClick("groups")}>Grupos</button>
+                    <button className={linkClass("questions")} onClick={() => handleClick("questions")}>Dúvidas</button>
                 </div>
 
                 <div className="relative md:hidden">
@@ -52,10 +59,10 @@ export default function Header() {
                             ref={menuRef}
                             className="absolute right-0 top-full mt-2 w-48 bg-secondary rounded-lg shadow-lg border border-white/10"
                         >
-                            <a href="#home" className={linkClass("home")} onClick={() => handleClick("home")}>Home</a>
-                            <a href="#information" className={linkClass("information")} onClick={() => handleClick("information")}>Informações</a>
-                            <a href="#groups" className={linkClass("groups")} onClick={() => handleClick("groups")}>Grupos</a>
-                            <a href="#questions" className={linkClass("questions")} onClick={() => handleClick("questions")}>Dúvidas</a>
+                            <button className={linkClass("home")} onClick={() => handleClick("home")}>Home</button>
+                            <button className={linkClass("information")} onClick={() => handleClick("information")}>Informações</button>
+                            <button className={linkClass("groups")} onClick={() => handleClick("groups")}>Grupos</button>
+                            <button className={linkClass("questions")} onClick={() => handleClick("questions")}>Dúvidas</button>
                         </div>
                     )}
                 </div>

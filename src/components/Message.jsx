@@ -67,10 +67,10 @@ export default function Message() {
                     </div>
 
                     <div>
-                        <p className="max-w-46 md:max-w-full text-sm md:text-inherit font-bold md:mb-3 truncate">
-                            {person.name} de {person.city}
+                        <p className="max-w-46 md:max-w-full text-sm md:text-inherit md:mb-3 truncate">
+                            <b className="text-primary">{person.name}</b> de {person.city}
                         </p>
-                        <p className="text-xs md:text-sm">{time}</p>
+                        <p className="text-xs md:text-sm text-gray-400">{time}</p>
                     </div>
                 </div>
                 <img src={wpp} alt="" className="w-5 h-5 md:w-8 md:h-8" />

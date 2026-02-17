@@ -10,3 +10,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+@keyframes ledBlink {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
