@@ -36,7 +36,7 @@ export default function Home() {
                 <div className="flex justify-center">
                     <div className="relative inline-block">
                         <span className="absolute inset-0 rounded-full bg-primary/10 animate-ping [animation-duration:1.5s]"></span>
-                        <p className="text-primary inline-block p-4 px-6 rounded-full bg-secondary/50 border">🔥 +2431 membros ativos</p>
+                        <p className="text-primary inline-block p-4 px-6 rounded-full bg-secondary/50 border">🔥 +2.300 membros ativos</p>
                     </div>
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold text-white text-center">As <b className="text-primary">melhores promoções</b><br /> em um só lugar</h1>
@@ -48,7 +48,7 @@ export default function Home() {
                         <p className="font-bold text-white">Entrar no WhatsApp - Grátis</p>
                     </a>
 
-                    <a href="#groups" className="hover:scale-105 flex items-center gap-4 cursor-pointer mx-auto rounded-full px-10 p-4 bg-gradient-to-r from-[#0084C6] to-[#02547D] shadow-[0_0_8px_rgba(34,158,217,0.35)] hover:shadow-[0_0_12px_rgba(34,158,217,0.45)] transition-all duration-300">
+                    <a href="#groups" className="hover:scale-105 flex items-center gap-4 cursor-pointer mx-auto rounded-full px-13 p-4 bg-gradient-to-r from-[#0084C6] to-[#02547D] shadow-[0_0_8px_rgba(34,158,217,0.35)] hover:shadow-[0_0_12px_rgba(34,158,217,0.45)] transition-all duration-300">
                         <UserGroupIcon className="w-6 h-6 text-white" />
                         <p className="font-bold text-white">Todos os grupos - Grátis</p>
                     </a>

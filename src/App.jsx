@@ -4,6 +4,7 @@ import Groups from "./pages/Groups";
 import Questions from "./pages/Questions";
 import Information from "./pages/Information";
 import Footer from "./components/Footer";
+import Message from "./components/Message";
 
 export default function App() {
 
@@ -15,6 +16,7 @@ export default function App() {
       <Groups />
       <Questions />
       <Footer/>
+      <Message/>
     </>
   )
 }
