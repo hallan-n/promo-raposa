@@ -95,7 +95,7 @@ export default function Information() {
                         <div className="justify-center border border-gray-700 rounded-2xl p-8 bg-[#1B1B26] h-full hover:shadow-[0_0_20px_rgba(167,139,250,0.35)] transition-all duration-300">
                             <UsersIcon className="mx-auto bg-primary p-4 rounded-full w-18 h-18 text-white" />
                             <div className="mt-5">
-                                <p className="text-center text-white font-bold text-2xl">2.431+</p>
+                                <p className="text-center text-white font-bold text-2xl">2.300+</p>
                                 <p className="text-center text-white">Participantes</p>
                             </div>
                         </div>

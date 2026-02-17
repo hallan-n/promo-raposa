@@ -28,6 +28,10 @@ export default function Footer() {
                             </li>
 
                             <li className="hover:text-primary cursor-pointer transition-colors">
+                                <a href="#information">Informações</a>
+                            </li>
+
+                            <li className="hover:text-primary cursor-pointer transition-colors">
                                 <a href="#groups">Grupos</a>
                             </li>
 
