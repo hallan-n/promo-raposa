@@ -19,25 +19,25 @@ export default function Groups() {
                 <p className="text-center uppercase text-2xl font-bold text-primary mt-2 mb-6">Acesse nossos grupos</p>
 
                 <div className="flex flex-col gap-4">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1120px] mx-auto px-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 container mx-auto px-4">
 
                         <FadeIn>
-                            <Group img={casa} description="Os melhores achadinhos para sua casa com descontos imperdíveis, tudo em um só lugar." group_link="https://chat.whatsapp.com/ENCVj8nvoNwCOFR1sj3raK?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn-QZln_LB3cDHcYEcUudEHsTf0AUrN7xL7NZFSHlQEUerWooG2XNysgTbOig_aem_wPiGBdapCY3VaWg2H9cgQg" />
+                            <Group img={casa} description="Os melhores achadinhos para sua casa com descontos imperdíveis, tudo em um só lugar." wpp_link="https://chat.whatsapp.com/ENCVj8nvoNwCOFR1sj3raK" telegram_link="https://t.me/raposacasa"/>
                         </FadeIn>
 
 
                         <FadeIn delay={100}>
-                            <Group img={kids} description="Os melhores achadinhos para o mundo infantil com descontos imperdíveis, tudo em um só lugar." group_link="https://chat.whatsapp.com/DNQVU1tmqDmEYfl9uz2tnI?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnfBsFbIxYf1rpWsmqsg6Bzs4vVb6I1W0RozkXXpimArXReNCdVJAvz8Pmp7U_aem_66DAykvqpgfi0rq8KDAbyw" />
+                            <Group img={kids} description="Os melhores achadinhos para o mundo infantil com descontos imperdíveis, tudo em um só lugar." wpp_link="https://chat.whatsapp.com/DNQVU1tmqDmEYfl9uz2tnI" telegram_link="https://t.me/raposakids"/>
                         </FadeIn>
 
 
                         <FadeIn delay={200}>
-                            <Group img={tech} description="Os melhores achadinhos de tecnologia com descontos imperdíveis, tudo em um só lugar." group_link="https://chat.whatsapp.com/GKoCh4z7HInLxTTnR84Jbi?mode=gi_t&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnXAxM1oK9MDs9dBXErgWxyJc2yI20PL8b3nvXZkjHWn4N79w7DhpSEMIFoq4_aem_bcdbt_XTW0xx0YKgjnedIA" />
+                            <Group img={tech} description="Os melhores achadinhos de tecnologia com descontos imperdíveis, tudo em um só lugar." wpp_link="https://chat.whatsapp.com/GKoCh4z7HInLxTTnR84Jbi" telegram_link="https://t.me/raposatech"/>
                         </FadeIn>
 
 
                         <FadeIn delay={300}>
-                            <Group img={beleza} description="Os melhores achadinhos de beleza com descontos imperdíveis, tudo em um só lugar." group_link="https://chat.whatsapp.com/Drn6ZY3dmkQK36pcwmHhxS?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn2lqevIihe4jDu3yWFENhpBSwr1za7FY3ksdjWlwsEIDahpcc61c5f5BL6bQ_aem_8U-tqafLoQHmOfsPEWic7g" />
+                            <Group img={beleza} description="Os melhores achadinhos de beleza com descontos imperdíveis, tudo em um só lugar." wpp_link="https://chat.whatsapp.com/Drn6ZY3dmkQK36pcwmHhxS" telegram_link="https://t.me/raposabeleza"/>
                         </FadeIn>
 
                     </div>

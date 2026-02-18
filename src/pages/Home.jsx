@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { CheckCircleIcon, UserGroupIcon } from "@heroicons/react/24/outline"
 import logo_wpp from "../assets/whatsapp.svg"
+import logo_telegram from "../assets/telegram.svg"
 
 export default function Home() {
     const SPEED = 1200
@@ -61,14 +62,14 @@ export default function Home() {
                 <p className="text-center text-white max-w-[550px] mx-auto">Receba ofertas verificadas de Tecnologia, Casa, Beleza, Kids e muito mais direto no seu celular. 100% gratuito!</p>
 
                 <div className="flex flex-col md:flex-row gap-4">
-                    <a href="https://chat.whatsapp.com/ENCVj8nvoNwCOFR1sj3raK?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn-QZln_LB3cDHcYEcUudEHsTf0AUrN7xL7NZFSHlQEUerWooG2XNysgTbOig_aem_wPiGBdapCY3VaWg2H9cgQg" className="hover:scale-105 flex items-center gap-4 cursor-pointer mx-auto rounded-full px-10 p-4 bg-gradient-to-r from-[#17AC4E] to-[#0D5728] shadow-[0_0_8px_rgba(34,197,94,0.35)] hover:shadow-[0_0_12px_rgba(34,197,94,0.45)] transition-all duration-300">
+                    <a href="https://chat.whatsapp.com/ENCVj8nvoNwCOFR1sj3raK" className="hover:scale-105 flex items-center gap-4 cursor-pointer mx-auto rounded-full px-10 p-4 bg-gradient-to-r from-[#17AC4E] to-[#0D5728] shadow-[0_0_8px_rgba(34,197,94,0.35)] hover:shadow-[0_0_12px_rgba(34,197,94,0.45)] transition-all duration-300">
                         <img src={logo_wpp} alt="" />
                         <p className="font-bold text-white">Entrar no WhatsApp | Grátis</p>
                     </a>
 
-                    <a href="#groups" className="hover:scale-105 flex items-center gap-4 cursor-pointer mx-auto rounded-full px-13 p-4 bg-gradient-to-r from-[#0084C6] to-[#02547D] shadow-[0_0_8px_rgba(34,158,217,0.35)] hover:shadow-[0_0_12px_rgba(34,158,217,0.45)] transition-all duration-300">
-                        <UserGroupIcon className="w-6 h-6 text-white" />
-                        <p className="font-bold text-white">Todos os grupos | Grátis</p>
+                    <a href="https://t.me/raposacasa" className="hover:scale-105 flex items-center gap-4 cursor-pointer mx-auto rounded-full px-13 p-4 bg-gradient-to-r from-[#0084C6] to-[#02547D] shadow-[0_0_8px_rgba(34,158,217,0.35)] hover:shadow-[0_0_12px_rgba(34,158,217,0.45)] transition-all duration-300">
+                        <img src={logo_telegram} alt="" />
+                        <p className="font-bold text-white">Entrar no Telegram | Grátis</p>
                     </a>
                 </div>
 
